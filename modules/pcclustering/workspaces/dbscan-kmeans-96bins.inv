@@ -255,12 +255,10 @@
                 <Properties>
                     <Property type="org.inviwo.FloatProperty" identifier="_horizontalBorder" />
                     <Property type="org.inviwo.FloatProperty" identifier="_verticalBorder" />
-                    <Property type="org.inviwo.BoolProperty" identifier="_lineSmoothing">
-                        <value content="1" />
-                    </Property>
+                    <Property type="org.inviwo.BoolProperty" identifier="_lineSmoothing" />
                     <Property type="org.inviwo.BoolProperty" identifier="_depthTesting" />
                     <Property type="org.inviwo.FloatProperty" identifier="_alphaFactor">
-                        <value content="0.28529999" />
+                        <value content="0.49720001" />
                     </Property>
                     <Property type="org.inviwo.BoolProperty" identifier="excludeZero" />
                     <Property type="org.inviwo.BoolProperty" identifier="_enableTextRendering" />
@@ -273,8 +271,8 @@
                     <Property type="org.inviwo.TransferFunctionProperty" identifier="transferFunction">
                         <MetaDataMap>
                             <MetaDataItem type="org.inviwo.PropertyEditorWidgetMetaData" key="org.inviwo.PropertyEditorWidgetMetaData">
-                                <position x="1838" y="507" />
-                                <dimensions x="1486" y="352" />
+                                <position x="2226" y="96" />
+                                <dimensions x="520" y="352" />
                                 <visibility content="1" />
                                 <dockstatus content="Floating" />
                                 <stickyflag content="0" />
@@ -289,23 +287,23 @@
                                     <rgba x="0" y="0" z="0" w="1" />
                                 </point>
                                 <point>
-                                    <pos x="0.064582542" y="1" />
+                                    <pos x="0.13709676" y="1" />
                                     <rgba x="0" y="0.68332952" z="1" w="1" />
                                 </point>
                                 <point>
-                                    <pos x="0.17875457" y="1" />
-                                    <rgba x="1" y="0.40000001" z="0" w="1" />
+                                    <pos x="0.29838708" y="1" />
+                                    <rgba x="1" y="0" z="0.06666667" w="1" />
                                 </point>
                                 <point>
-                                    <pos x="0.27050003" y="1" />
+                                    <pos x="0.48387092" y="1" />
                                     <rgba x="0.40000001" y="1" z="0" w="1" />
                                 </point>
                                 <point>
-                                    <pos x="0.58473718" y="1" />
+                                    <pos x="0.75403225" y="1" />
                                     <rgba x="0.29999238" y="0" z="1" w="1" />
                                 </point>
                                 <point>
-                                    <pos x="0.80724877" y="1" />
+                                    <pos x="1" y="1" />
                                     <rgba x="1" y="0.51667047" z="0" w="1" />
                                 </point>
                             </dataPoints>
@@ -348,7 +346,7 @@
                         <collapsed content="0" />
                     </Property>
                     <Property type="org.inviwo.IntVec2Property" identifier="position">
-                        <value x="2432" y="1275" />
+                        <value x="1883" y="341" />
                     </Property>
                     <Property type="org.inviwo.OptionPropertyEnumInt" identifier="visibleLayer" />
                     <Property type="org.inviwo.IntProperty" identifier="colorLayer_">
@@ -388,10 +386,10 @@
                     <MetaDataItem type="org.inviwo.ProcessorMetaData" key="org.inviwo.ProcessorMetaData">
                         <position x="-1150" y="0" />
                         <visibility content="1" />
-                        <selection content="1" />
+                        <selection content="0" />
                     </MetaDataItem>
                     <MetaDataItem type="org.inviwo.ProcessorWidgetMetaData" key="org.inviwo.ProcessorWidgetMetaData">
-                        <position x="2432" y="1275" />
+                        <position x="1883" y="341" />
                         <dimensions x="1182" y="472" />
                         <visibility content="1" />
                     </MetaDataItem>
@@ -500,16 +498,13 @@
                                 <value content="1" />
                             </option>
                         </options>
+                        <selectedIdentifier content="topology" />
                     </Property>
                     <Property type="org.inviwo.FloatProperty" identifier="_percentage">
-                        <MetaDataMap>
-                            <MetaDataItem type="org.inviwo.StringStringStdUnorderedMapMetaData" key="SavedState" />
-                        </MetaDataMap>
-                        <increment content="9.9999997e-05" />
-                        <value content="0.1164" />
+                        <value content="0.178" />
                     </Property>
                     <Property type="org.inviwo.IntProperty" identifier="_nClusters">
-                        <value content="2" />
+                        <value content="23" />
                     </Property>
                     <Property type="org.inviwo.ButtonProperty" identifier="_invalidate" />
                 </Properties>
@@ -564,14 +559,16 @@
                     <OutPort type="Outport" identifier="out_data" id="ref14" />
                 </OutPorts>
                 <Properties>
-                    <Property type="org.inviwo.IntProperty" identifier="_nBins" />
+                    <Property type="org.inviwo.IntProperty" identifier="_nBins">
+                        <value content="96" />
+                    </Property>
                     <Property type="org.inviwo.ButtonProperty" identifier="_invalidate" />
                 </Properties>
                 <MetaDataMap>
                     <MetaDataItem type="org.inviwo.ProcessorMetaData" key="org.inviwo.ProcessorMetaData">
                         <position x="-1150" y="-375" />
                         <visibility content="1" />
-                        <selection content="0" />
+                        <selection content="1" />
                     </MetaDataItem>
                 </MetaDataMap>
             </Processor>
@@ -599,7 +596,7 @@
                         <value content="1" />
                     </Property>
                     <Property type="org.inviwo.StringProperty" identifier="_dimensionMask">
-                        <value content="11111" />
+                        <value content="00010" />
                     </Property>
                     <Property type="org.inviwo.IntProperty" identifier="_parallelismSlider" />
                     <Property type="org.inviwo.ButtonProperty" identifier="_invalidate" />
@@ -999,10 +996,10 @@
                     <PortGroup content="default" key="outport" />
                 </PortGroups>
                 <InPorts>
-                    <InPort type="org.inviwo.ImageInport" identifier="inport" id="ref37" />
+                    <InPort type="org.inviwo.ImageInport" identifier="inport" id="ref36" />
                 </InPorts>
                 <OutPorts>
-                    <OutPort type="org.inviwo.ImageOutport" identifier="outport" id="ref38" />
+                    <OutPort type="org.inviwo.ImageOutport" identifier="outport" id="ref37" />
                 </OutPorts>
                 <Properties>
                     <Property type="org.inviwo.OptionPropertyInt" identifier="backgroundStyle">
@@ -1033,7 +1030,7 @@
                     <PortGroup content="default" key="inport" />
                 </PortGroups>
                 <InPorts>
-                    <InPort type="org.inviwo.ImageInport" identifier="inport" id="ref36" />
+                    <InPort type="org.inviwo.ImageInport" identifier="inport" id="ref38" />
                 </InPorts>
                 <Properties>
                     <Property type="org.inviwo.CompositeProperty" identifier="inputSize">
@@ -1055,7 +1052,7 @@
                         <collapsed content="0" />
                     </Property>
                     <Property type="org.inviwo.IntVec2Property" identifier="position">
-                        <value x="2421" y="1266" />
+                        <value x="2480" y="1241" />
                     </Property>
                     <Property type="org.inviwo.OptionPropertyEnumInt" identifier="visibleLayer" />
                     <Property type="org.inviwo.IntProperty" identifier="colorLayer_">
@@ -1098,7 +1095,7 @@
                         <selection content="0" />
                     </MetaDataItem>
                     <MetaDataItem type="org.inviwo.ProcessorWidgetMetaData" key="org.inviwo.ProcessorWidgetMetaData">
-                        <position x="2421" y="1266" />
+                        <position x="2480" y="1241" />
                         <dimensions x="1182" y="472" />
                         <visibility content="1" />
                     </MetaDataItem>
@@ -1166,7 +1163,7 @@
                         <collapsed content="0" />
                     </Property>
                     <Property type="org.inviwo.IntVec2Property" identifier="position">
-                        <value x="1115" y="1288" />
+                        <value x="1069" y="1348" />
                     </Property>
                     <Property type="org.inviwo.OptionPropertyEnumInt" identifier="visibleLayer" />
                     <Property type="org.inviwo.IntProperty" identifier="colorLayer_">
@@ -1181,9 +1178,9 @@
                         <value content="0" />
                     </Property>
                     <Property type="org.inviwo.DirectoryProperty" identifier="layerDir">
-                        <absolutePath content="E:/" />
-                        <workspaceRelativePath content="" />
-                        <ivwdataRelativePath content="" />
+                        <absolutePath content="D:/alebo68/Dropbox/University/Projects/ParallelCoordinatesClustering/images/low_ratio_test2" />
+                        <workspaceRelativePath content="../../../../../alebo68/Dropbox/University/Projects/ParallelCoordinatesClustering/images/low_ratio_test2" />
+                        <ivwdataRelativePath content="../../../alebo68/Dropbox/University/Projects/ParallelCoordinatesClustering/images/low_ratio_test2" />
                         <nameFilter>
                             <filter>
                                 <extension content="*" />
@@ -1209,7 +1206,7 @@
                         <selection content="0" />
                     </MetaDataItem>
                     <MetaDataItem type="org.inviwo.ProcessorWidgetMetaData" key="org.inviwo.ProcessorWidgetMetaData">
-                        <position x="1115" y="1288" />
+                        <position x="1069" y="1348" />
                         <dimensions x="1182" y="472" />
                         <visibility content="1" />
                     </MetaDataItem>
@@ -1360,9 +1357,7 @@
                     <Property type="org.inviwo.BoolProperty" identifier="_lineSmoothing" />
                     <Property type="org.inviwo.BoolProperty" identifier="_depthTesting" />
                     <Property type="org.inviwo.FloatProperty" identifier="_alphaFactor" />
-                    <Property type="org.inviwo.BoolProperty" identifier="excludeZero">
-                        <value content="1" />
-                    </Property>
+                    <Property type="org.inviwo.BoolProperty" identifier="excludeZero" />
                     <Property type="org.inviwo.BoolProperty" identifier="_enableTextRendering" />
                     <Property type="org.inviwo.StringProperty" identifier="_dimensionOrderingString">
                         <value content="01234" />
@@ -1373,8 +1368,8 @@
                     <Property type="org.inviwo.TransferFunctionProperty" identifier="transferFunction">
                         <MetaDataMap>
                             <MetaDataItem type="org.inviwo.PropertyEditorWidgetMetaData" key="org.inviwo.PropertyEditorWidgetMetaData">
-                                <position x="239" y="96" />
-                                <dimensions x="2507" y="352" />
+                                <position x="2226" y="96" />
+                                <dimensions x="520" y="352" />
                                 <visibility content="1" />
                                 <dockstatus content="Floating" />
                                 <stickyflag content="0" />
@@ -1386,27 +1381,27 @@
                             <dataPoints>
                                 <point>
                                     <pos x="0" y="1" />
-                                    <rgba x="0.98823529" y="0.84174865" z="0.011627375" w="1" />
+                                    <rgba x="0" y="0" z="0" w="1" />
                                 </point>
                                 <point>
-                                    <pos x="0.23489936" y="1" />
-                                    <rgba x="0.98823529" y="0.82482642" z="0.0077515831" w="1" />
+                                    <pos x="0.18548386" y="1" />
+                                    <rgba x="0" y="0.68332952" z="1" w="1" />
                                 </point>
                                 <point>
-                                    <pos x="0.36375839" y="1" />
-                                    <rgba x="0.0077515831" y="0.98823529" z="0.79214162" w="1" />
+                                    <pos x="0.32661289" y="1" />
+                                    <rgba x="1" y="0" z="0.06666667" w="1" />
                                 </point>
                                 <point>
-                                    <pos x="0.44295308" y="1" />
-                                    <rgba x="0.92941177" y="0.81229877" z="0.051026169" w="1" />
+                                    <pos x="0.6774193" y="1" />
+                                    <rgba x="0.40000001" y="1" z="0" w="1" />
                                 </point>
                                 <point>
-                                    <pos x="0.49574944" y="1" />
-                                    <rgba x="0.92286563" y="0.98823529" z="0.0077515831" w="1" />
+                                    <pos x="0.77419353" y="1" />
+                                    <rgba x="0.29999238" y="0" z="1" w="1" />
                                 </point>
                                 <point>
-                                    <pos x="0.52080536" y="1" />
-                                    <rgba x="0.98823529" y="0.0077515831" z="0.67774475" w="1" />
+                                    <pos x="1" y="1" />
+                                    <rgba x="1" y="0.51667047" z="0" w="1" />
                                 </point>
                             </dataPoints>
                         </transferFunction>
@@ -1708,7 +1703,7 @@
                 </OutPorts>
                 <Properties>
                     <Property type="org.inviwo.FileProperty" identifier="filename">
-                        <absolutePath content="E:/IDX.txt" />
+                        <absolutePath content="E:/IDX-9-0.05-30.txt" />
                         <workspaceRelativePath content="" />
                         <ivwdataRelativePath content="" />
                         <nameFilter>
@@ -1797,7 +1792,7 @@
                 <InPort type="Inport" identifier="in_data" reference="ref31" />
             </Connection>
             <Connection>
-                <OutPort type="org.inviwo.ImageOutport" identifier="outport" reference="ref38" />
+                <OutPort type="org.inviwo.ImageOutport" identifier="outport" reference="ref37" />
                 <InPort type="org.inviwo.ImageInport" identifier="inport" reference="ref41" />
             </Connection>
             <Connection>
@@ -1806,7 +1801,7 @@
             </Connection>
             <Connection>
                 <OutPort type="org.inviwo.ImageOutport" identifier="outport" reference="ref40" />
-                <InPort type="org.inviwo.ImageInport" identifier="inport" reference="ref36" />
+                <InPort type="org.inviwo.ImageInport" identifier="inport" reference="ref38" />
             </Connection>
             <Connection>
                 <OutPort type="org.inviwo.ImageOutport" identifier="image" reference="ref42" />
@@ -1814,7 +1809,7 @@
             </Connection>
             <Connection>
                 <OutPort type="org.inviwo.ImageOutport" identifier="image" reference="ref49" />
-                <InPort type="org.inviwo.ImageInport" identifier="inport" reference="ref37" />
+                <InPort type="org.inviwo.ImageInport" identifier="inport" reference="ref36" />
             </Connection>
             <Connection>
                 <OutPort type="org.inviwo.ImageOutport" identifier="image" reference="ref50" />
@@ -1843,44 +1838,36 @@
         </Connections>
         <PropertyLinks>
             <PropertyLink>
-                <SourceProperty type="org.inviwo.OptionPropertyInt" identifier="_yAxisSelection" reference="ref52" />
-                <DestinationProperty type="org.inviwo.OptionPropertyInt" identifier="_yAxisSelection" reference="ref27" />
-            </PropertyLink>
-            <PropertyLink>
-                <SourceProperty type="org.inviwo.OptionPropertyInt" identifier="_xAxisSelection" reference="ref43" />
-                <DestinationProperty type="org.inviwo.OptionPropertyInt" identifier="_xAxisSelection" reference="ref26" />
+                <SourceProperty type="org.inviwo.TransferFunctionProperty" identifier="transferFunction" reference="ref46" />
+                <DestinationProperty type="org.inviwo.TransferFunctionProperty" identifier="transferFunction" reference="ref22" />
             </PropertyLink>
             <PropertyLink>
                 <SourceProperty type="org.inviwo.TransferFunctionProperty" identifier="transferFunction" reference="ref22" />
-                <DestinationProperty type="org.inviwo.TransferFunctionProperty" identifier="transferFunction" reference="ref29" />
-            </PropertyLink>
-            <PropertyLink>
-                <SourceProperty type="org.inviwo.OptionPropertyInt" identifier="_yAxisSelection" reference="ref27" />
-                <DestinationProperty type="org.inviwo.OptionPropertyInt" identifier="_yAxisSelection" reference="ref52" />
-            </PropertyLink>
-            <PropertyLink>
-                <SourceProperty type="org.inviwo.OptionPropertyInt" identifier="_yAxisSelection" reference="ref27" />
-                <DestinationProperty type="org.inviwo.OptionPropertyInt" identifier="_yAxisSelection" reference="ref44" />
-            </PropertyLink>
-            <PropertyLink>
-                <SourceProperty type="org.inviwo.OptionPropertyInt" identifier="_xAxisSelection" reference="ref51" />
-                <DestinationProperty type="org.inviwo.OptionPropertyInt" identifier="_xAxisSelection" reference="ref26" />
+                <DestinationProperty type="org.inviwo.TransferFunctionProperty" identifier="transferFunction" reference="ref54" />
             </PropertyLink>
             <PropertyLink>
                 <SourceProperty type="org.inviwo.TransferFunctionProperty" identifier="transferFunction" reference="ref22" />
                 <DestinationProperty type="org.inviwo.TransferFunctionProperty" identifier="transferFunction" reference="ref46" />
             </PropertyLink>
             <PropertyLink>
+                <SourceProperty type="org.inviwo.TransferFunctionProperty" identifier="transferFunction" reference="ref22" />
+                <DestinationProperty type="org.inviwo.TransferFunctionProperty" identifier="transferFunction" reference="ref29" />
+            </PropertyLink>
+            <PropertyLink>
                 <SourceProperty type="org.inviwo.FloatProperty" identifier="_glyphSize" reference="ref45" />
                 <DestinationProperty type="org.inviwo.FloatProperty" identifier="_glyphSize" reference="ref28" />
             </PropertyLink>
             <PropertyLink>
-                <SourceProperty type="org.inviwo.OptionPropertyInt" identifier="_xAxisSelection" reference="ref26" />
-                <DestinationProperty type="org.inviwo.OptionPropertyInt" identifier="_xAxisSelection" reference="ref43" />
+                <SourceProperty type="org.inviwo.OptionPropertyInt" identifier="_yAxisSelection" reference="ref27" />
+                <DestinationProperty type="org.inviwo.OptionPropertyInt" identifier="_yAxisSelection" reference="ref52" />
             </PropertyLink>
             <PropertyLink>
-                <SourceProperty type="org.inviwo.TransferFunctionProperty" identifier="transferFunction" reference="ref22" />
-                <DestinationProperty type="org.inviwo.TransferFunctionProperty" identifier="transferFunction" reference="ref54" />
+                <SourceProperty type="org.inviwo.TransferFunctionProperty" identifier="transferFunction" reference="ref29" />
+                <DestinationProperty type="org.inviwo.TransferFunctionProperty" identifier="transferFunction" reference="ref22" />
+            </PropertyLink>
+            <PropertyLink>
+                <SourceProperty type="org.inviwo.OptionPropertyInt" identifier="_xAxisSelection" reference="ref43" />
+                <DestinationProperty type="org.inviwo.OptionPropertyInt" identifier="_xAxisSelection" reference="ref26" />
             </PropertyLink>
             <PropertyLink>
                 <SourceProperty type="org.inviwo.FloatProperty" identifier="_glyphSize" reference="ref28" />
@@ -1891,28 +1878,36 @@
                 <DestinationProperty type="org.inviwo.TransferFunctionProperty" identifier="transferFunction" reference="ref22" />
             </PropertyLink>
             <PropertyLink>
-                <SourceProperty type="org.inviwo.TransferFunctionProperty" identifier="transferFunction" reference="ref29" />
-                <DestinationProperty type="org.inviwo.TransferFunctionProperty" identifier="transferFunction" reference="ref22" />
-            </PropertyLink>
-            <PropertyLink>
-                <SourceProperty type="org.inviwo.TransferFunctionProperty" identifier="transferFunction" reference="ref46" />
-                <DestinationProperty type="org.inviwo.TransferFunctionProperty" identifier="transferFunction" reference="ref22" />
-            </PropertyLink>
-            <PropertyLink>
                 <SourceProperty type="org.inviwo.OptionPropertyInt" identifier="_yAxisSelection" reference="ref44" />
                 <DestinationProperty type="org.inviwo.OptionPropertyInt" identifier="_yAxisSelection" reference="ref27" />
+            </PropertyLink>
+            <PropertyLink>
+                <SourceProperty type="org.inviwo.OptionPropertyInt" identifier="_yAxisSelection" reference="ref27" />
+                <DestinationProperty type="org.inviwo.OptionPropertyInt" identifier="_yAxisSelection" reference="ref44" />
             </PropertyLink>
             <PropertyLink>
                 <SourceProperty type="org.inviwo.FloatProperty" identifier="_glyphSize" reference="ref53" />
                 <DestinationProperty type="org.inviwo.FloatProperty" identifier="_glyphSize" reference="ref28" />
             </PropertyLink>
             <PropertyLink>
-                <SourceProperty type="org.inviwo.FloatProperty" identifier="_glyphSize" reference="ref28" />
-                <DestinationProperty type="org.inviwo.FloatProperty" identifier="_glyphSize" reference="ref53" />
+                <SourceProperty type="org.inviwo.OptionPropertyInt" identifier="_xAxisSelection" reference="ref26" />
+                <DestinationProperty type="org.inviwo.OptionPropertyInt" identifier="_xAxisSelection" reference="ref43" />
             </PropertyLink>
             <PropertyLink>
                 <SourceProperty type="org.inviwo.OptionPropertyInt" identifier="_xAxisSelection" reference="ref26" />
                 <DestinationProperty type="org.inviwo.OptionPropertyInt" identifier="_xAxisSelection" reference="ref51" />
+            </PropertyLink>
+            <PropertyLink>
+                <SourceProperty type="org.inviwo.OptionPropertyInt" identifier="_xAxisSelection" reference="ref51" />
+                <DestinationProperty type="org.inviwo.OptionPropertyInt" identifier="_xAxisSelection" reference="ref26" />
+            </PropertyLink>
+            <PropertyLink>
+                <SourceProperty type="org.inviwo.OptionPropertyInt" identifier="_yAxisSelection" reference="ref52" />
+                <DestinationProperty type="org.inviwo.OptionPropertyInt" identifier="_yAxisSelection" reference="ref27" />
+            </PropertyLink>
+            <PropertyLink>
+                <SourceProperty type="org.inviwo.FloatProperty" identifier="_glyphSize" reference="ref28" />
+                <DestinationProperty type="org.inviwo.FloatProperty" identifier="_glyphSize" reference="ref53" />
             </PropertyLink>
         </PropertyLinks>
     </ProcessorNetwork>

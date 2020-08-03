@@ -58,6 +58,7 @@ private:
     FloatProperty _alphaFactor;
 
     BoolProperty _enableTextRendering;
+    BoolProperty _excludeZero;
 
     ButtonProperty _invalidate;
 

@@ -36,6 +36,7 @@ PCPRenderer::PCPRenderer()
     , _alphaFactor("_alphaFactor", "Alpha Factor", 1.f, 0.f, 1.f)
     , _transFunc("transferFunction", "Transfer Function")
     , _invalidate("invalidate", "Invalidate")
+    , _excludeZero("excludeZero", "Exclude Zero Cluster", false)
     //, _textBorder("_textBorder", "Text Border", 0.05f, 0.f, 1.f)
     , _shader("pcprenderer.vert", "pcprenderer.frag")
     , _backgroundShader("pcprenderer_background.frag")
@@ -66,7 +67,7 @@ PCPRenderer::PCPRenderer()
     addProperty(_depthTesting);
 
     addProperty(_alphaFactor);
-
+    addProperty(_excludeZero);
     addProperty(_enableTextRendering);
 
     addProperty(_dimensionOrderingString);
@@ -218,6 +219,7 @@ void PCPRenderer::renderParallelCoordinates() {
     _shader.setUniform("_verticalBorder", _verticalBorder);
     _shader.setUniform("_depthTesting", _depthTesting);
     _shader.setUniform("_alphaFactor", _alphaFactor);
+    _shader.setUniform("_excludeZero", _excludeZero);
 
     TextureUnit tfUnit;
     utilgl::bindTexture(_transFunc, tfUnit);

@@ -35,6 +35,8 @@ PCPOtherClustering::PCPOtherClustering()
     , _kMeansk("kmeans_k", "K-Means K", 2, 0, 30)
     , _normalization("normalization", "Normalization", true)
     , _invalidate("_invalidate", "Invalidate")
+    , _disableKmeans("_disableKmeans", "Disable KMeans", false)
+    , _disableDBScan("_disableDBScan", "Disable DBScan", true)
 {
     addPort(_inport);
 
@@ -57,6 +59,9 @@ PCPOtherClustering::PCPOtherClustering()
         _kmeansDirty = true;
     });
     addProperty(_normalization);
+
+    addProperty(_disableKmeans);
+    addProperty(_disableDBScan);
 
     addProperty(_invalidate);
     _invalidate.onChange([this]() {
@@ -95,7 +100,7 @@ void PCPOtherClustering::process() {
     );
     _outport.setData(_outportData);
 
-    if (_dbScanDirty) {
+    if (_dbScanDirty && !_disableDBScan) {
 #if 0
         // Run DBScan
         std::vector<dbscan::Point> points;
@@ -185,7 +190,7 @@ void PCPOtherClustering::process() {
         _dbScanDirty = false;
     }
 
-    if (_kmeansDirty) {
+    if (_kmeansDirty && !_disableKmeans) {
         // Run K-Means
         KMeans kmeans(_kMeansk);
         // Fill points
@@ -230,6 +235,12 @@ void PCPOtherClustering::process() {
         _kmeansColoringOutport.setData(_kmeansColoringData);
 
         _kmeansDirty = false;
+
+
+        std::ofstream f("export_kmeans.txt");
+        for (int i = 1; i < clusterData.size(); ++i) {
+            f << clusterData[i] << '\n';
+        }
     }
 }
 

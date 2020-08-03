@@ -39,6 +39,7 @@ ScatterPlotRenderer::ScatterPlotRenderer()
     , _xAxisSelection("_xAxisSelection", "X Axis")
     , _yAxisSelection("_yAxisSelection", "Y Axis")
     , _glyphSize("_glyphSize", "Glyph Size")
+    , _excludeZero("_excludeZero", "Exclude Zero Cluster", false)
     , _transFunc("transferFunction", "Transfer Function")
     , _shader("scatterplotrenderer.vert", "scatterplotrenderer.frag")
 {
@@ -65,6 +66,7 @@ ScatterPlotRenderer::ScatterPlotRenderer()
     addProperty(_yAxisSelection);
     addProperty(_glyphSize);
     addProperty(_transFunc);
+    addProperty(_excludeZero);
 
     _transFunc.get().clearPoints();
     _transFunc.get().addPoint(vec2(0, 1), vec4(0, 0, 0, 1));
@@ -107,6 +109,7 @@ void ScatterPlotRenderer::process() {
     _shader.setUniform("_nData", data->nValues / data->nDimensions);
     _shader.setUniform("_xAxisSelection", _xAxisSelection.get());
     _shader.setUniform("_yAxisSelection", _yAxisSelection.get());
+    _shader.setUniform("_excludeZero", _excludeZero);
 
     TextureUnit tfUnit;
     utilgl::bindTexture(_transFunc, tfUnit);

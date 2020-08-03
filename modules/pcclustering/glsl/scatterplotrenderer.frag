@@ -4,8 +4,13 @@ in flat int nClusters;
 uniform int _nData;
 uniform bool _hasColoringData;
 uniform sampler2D _transFunc;
+uniform bool _excludeZero;
 
 void main() {
+    if (_excludeZero && identifier == 0) {
+        discard;
+    }
+    
     float d = 1.0 - length(gl_PointCoord - vec2(0.5));
     float alpha = clamp(d * 1.0, 0.0, 1.0);
 

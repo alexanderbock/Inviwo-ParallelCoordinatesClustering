@@ -10,6 +10,7 @@ set(HEADER_FILES
     ${CMAKE_CURRENT_SOURCE_DIR}/misc/parallelcoordinates_axis_permutation.h
     ${CMAKE_CURRENT_SOURCE_DIR}/misc/support.h
     ${CMAKE_CURRENT_SOURCE_DIR}/processors/clusterexport.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/clusterreader.h
     ${CMAKE_CURRENT_SOURCE_DIR}/processors/clusterrenderer.h
     ${CMAKE_CURRENT_SOURCE_DIR}/processors/densitymapfiltering.h
     ${CMAKE_CURRENT_SOURCE_DIR}/processors/densitymapgenerator.h
@@ -38,6 +39,7 @@ set(SOURCE_FILES
     ${CMAKE_CURRENT_SOURCE_DIR}/misc/parallelcoordinates_axis_permutation.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/misc/support.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/processors/clusterexport.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/clusterreader.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/processors/clusterrenderer.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/processors/densitymapfiltering.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/processors/densitymapgenerator.cpp

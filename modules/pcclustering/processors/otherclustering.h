@@ -51,6 +51,9 @@ private:
 
     BoolProperty _normalization;
 
+    BoolProperty _disableKmeans;
+    BoolProperty _disableDBScan;
+
     ButtonProperty _invalidate;
 
     //int countElements(const ParallelCoordinatesPlotData* inData,

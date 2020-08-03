@@ -40,6 +40,8 @@ private:
     OptionPropertyInt _yAxisSelection;
     FloatProperty _glyphSize;
 
+    BoolProperty _excludeZero;
+
     TransferFunctionProperty _transFunc;
 
     Shader _shader;
